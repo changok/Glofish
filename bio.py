@@ -1,13 +1,6 @@
 import commands
 import sys
 
-#for i in sys.argv:
-#	print str(i)
-
-#commands.getoutput("cat rank.txt | sed 's/\("[0-9]*"\) \("mutant_[1-8]"\) .* \([0-9]*\) ".*" .*/\1 \2 \3/'")
-
-#blah = """cat %s | sed 's/\("[0-9]*"\) \("mutant_[1-8]"\) .* \([0-9]*\) ".*" .*/\1 \2 \3/'""" % sys.argv[1]
-#result = commands.getoutput(blah)
 
 f = open("parsedRank.txt", "r")
 lines = f.readlines()
