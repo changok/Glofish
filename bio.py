@@ -1,6 +1,4 @@
-import commands
-import sys
-
+#glofish
 
 f = open("parsedRank.txt", "r")
 lines = f.readlines()
@@ -18,9 +16,6 @@ num_bar = MAX_CHRPOS / WIDTH
 # initialzing part
 mtable = []
 totals = []
-#bars = []
-#for i in range(num_bar+1):
-	#bars.append(0)
 
 for i in range(num_mutant):
 	mtable.append([])
