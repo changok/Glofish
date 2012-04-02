@@ -1,0 +1,5 @@
+How to run:
+  1. parse the data, removing all obsolete columns
+     i.g. ./parser.sh <input filename> <parsed result filename>
+  2. run the program with parsed result
+     i.g. python bio.py <parsed result filename>
