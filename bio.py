@@ -1,13 +1,13 @@
 import sys
 #glofish
 
-filename = sys.argv[1]
+FILENAME = sys.argv[1]
+WIDTH = int(sys.argv[2]) # width(range) of bar(column)
 print "GloshFish chart"
-print "Read a file : " + filename
+print "Read a file : " + FILENAME
 
-f = open(filename, "r")
+f = open(FILENAME, "r")
 lines = f.readlines()
-WIDTH = 1000000 # width(range) of bar(column)
 MAX_CHRPOS = 0	# maximum number of ChrPos : generate reasonable number of bars(columns) of chart
 NUM_MUTANT = 0	# the number of Mutants
 THRESHOLD = 300	# threshold for pretty chart printer
@@ -45,12 +45,12 @@ for i in range(NUM_MUTANT):
 	print "MUTANT TABLE : mutant_%s" % (i+1),
 	print " / total: " + str(totals[i])
 	if compress > 1:
-		print "The length of each bar is compressed(divided) by " + str(compress)
-	print mtable[i]
+		print "The length(height) of each bar is compressed(divided) by " + str(compress) + "."
+	print "The range of ChrPos on each bar is " + str(WIDTH) + "(base)."
 	for j in range(NUM_BARS+1):
 		portion = (float(mtable[i][j])/float(totals[i]))*100.0
 		portion = round( portion, 2)
-		print str(mtable[i][j]) + "(" + str(portion) + "%):\t",
+		print str(j+1) + ": "  + str(mtable[i][j]) + "(" + str(portion) + "%):\t",
 		for h in range(mtable[i][j]/compress):
 			print "|",
 		print ""
