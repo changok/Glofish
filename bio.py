@@ -60,7 +60,7 @@ for i in lines:
 
 # pretty printout part
 for i in range(NUM_MUTANT):
-	print "MUTANT TABLE : mutant_%s" % (i+1)
+	print "\nMUTANT TABLE : mutant_%s" % (i+1)
 	for j in range(6):
 		compress = totals[i][j]/THRESHOLD +1	# for pretty "bar" printout
 		print "Section : %s (Chr)" % ROMANS[j],
