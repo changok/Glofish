@@ -55,8 +55,9 @@ for i in lines:
   if chrnum == -1:
     print "unexpected Chr error"
     sys.exit(0)
-    mutants[mutant][chrnum][index] += 1
-    totals[mutant][chrnum] += 1
+
+  mutants[mutant][chrnum][index] += 1
+  totals[mutant][chrnum] += 1
 
 # pretty printout part
 for i in range(NUM_MUTANT):

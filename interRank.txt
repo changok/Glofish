@@ -1,4 +1,4 @@
-"mutantID" "Chr" "strand" "interID" "interKey" "relativePos" "ChrPos" "Alignment" "WT.Read" "Mut.Read"
+"" "mutantID" "Chr" "strand" "interID" "interKey" "relativePos" "ChrPos" "Alignment" "WT.Read" "Mut.Read"
 "3" "mutant_1" "I" 1 "C53D5.3.exon1" "C53D5.3" 572 254703 "tgataaatcaata*||||||||||||cgataaatcaata" 1 3
 "4" "mutant_1" "I" 1 "C53D5.3.exon1" "C53D5.3" 16582 270713 "gaatttaaattta*||||||||||||aaatttaaattta" 1 3
 "960" "mutant_2" "I" 1 "C53D5.3.exon1" "C53D5.3" 24769 278900 "aaccaaaaaatcc||||||||||||*aaccaaaaaatca" 1 3
